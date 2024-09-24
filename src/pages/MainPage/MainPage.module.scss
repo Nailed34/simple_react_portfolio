@@ -1,0 +1,29 @@
+.main {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 26px;
+
+    & > .header {
+        text-align: center;
+    }
+
+    & > .main_item {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    & > .flex_row_container {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & > .main_ul {
+            margin: 0px;
+            max-width: 70%;
+    
+            & > .main_ul_li {
+                margin-left: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.main {
+    margin-top: 10px;
+    margin-right: 35px;
+    color: white;
+    background-color: transparent;
+    border: 0px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-size: 26px;
+    cursor: pointer;
+    transition-property: color, text-decoration;
+    transition-duration: 200ms;
+
+    &:hover {
+        color:#AAABB8;
+    }
+
+    &:disabled:hover,
+    &:disabled {
+        text-decoration: none;
+        cursor: default;
+        color: #2E9CCA;
+    }
+    
+}

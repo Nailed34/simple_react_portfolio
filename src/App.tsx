@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
+import { PageSceneClient } from "./types/pageNavigation";
+import { Header } from "./pages/components/Header/Header";
+
+import "./App.css";
+
+
+const App = () => {
+  const pages = PageSceneClient.getScenes();
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          {pages.map((e) => (
+            <Route key={e.type} path={e.path} element={<e.page />} />
+          ))}
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

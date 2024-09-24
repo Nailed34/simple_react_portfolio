@@ -1,0 +1,19 @@
+.main {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 26px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    & > .post_list {
+        width: 60%;
+        min-width: 400px;
+        text-align: center;
+    }
+
+    & > .new_post_form {
+        width: 20%;
+        min-width: 400px;
+        text-align: center;
+    }
+}

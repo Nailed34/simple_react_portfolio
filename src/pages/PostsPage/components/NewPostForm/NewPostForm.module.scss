@@ -1,0 +1,56 @@
+.main {
+    & > .title {
+        background-color: #464866;
+        border: 2px solid white;
+        border-radius: 5px;
+        width: 100%;
+        color: white;
+        font-size: 26px;
+    }
+
+    & > .title_error {
+        background-color: #464866;
+        border: 2px solid red;
+        border-radius: 5px;
+        width: 100%;
+        color: white;
+        font-size: 26px;
+    }
+
+    & > .new_post_body {
+        margin-top: 5px;
+        background-color: #464866;
+        border: 2px solid white;
+        border-radius: 5px;
+        width: 100%;
+        height: 200px;
+        color: white;
+        font-size: 26px;
+    }
+
+    & > .new_post_body_error {
+        margin-top: 5px;
+        background-color: #464866;
+        border: 2px solid red;
+        border-radius: 5px;
+        width: 100%;
+        height: 200px;
+        color: white;
+        font-size: 26px;
+    }
+
+    & > .button_send {
+        border: 2px solid white;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;      
+    }
+
+    & > .creation_error {
+        color: red;
+    }
+
+    & > .creation_error_hidden {
+        display: none;
+    }
+}

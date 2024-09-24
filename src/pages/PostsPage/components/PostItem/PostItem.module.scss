@@ -1,0 +1,32 @@
+.main {
+    background-color: #464866;
+    border-radius: 5px;
+    margin: 5px;
+
+    & > .title {
+        font-size: 28px;
+        color: #2E9CCA;
+    }
+
+    & > .body {
+        font-size: 20px;
+    }
+
+    & > .dev_container {
+        display: flex;
+        justify-content: space-between;
+
+        & > .id {
+            font-size: 18px;
+            margin-left: 5px;
+        }
+    
+        & > .remove_button {
+            font-size: 18px;
+            margin-right: 5px;
+            cursor: pointer;
+            color: red;
+        }
+    }
+   
+}

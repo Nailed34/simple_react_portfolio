@@ -1,0 +1,40 @@
+.main {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 26px;
+
+    & > .flex_row_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        & > .flex_row_item {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            justify-content: center;
+            margin-left: 25px;
+        }
+
+        & > .photo {
+            width: 400px;
+        }
+    }
+
+    & > .contacts {
+
+        & > .contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+    
+            & > .link {
+                color: #2E9CCA;
+                margin-left: 15px;
+            }
+        }
+    }
+
+    & > .main_spacer {
+        min-height: 50px;
+    }
+}
